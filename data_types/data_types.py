@@ -21,6 +21,8 @@ b = int(y)
 
 print(random.randrange(1, 100))
 
+print(random.randrange(500, 1000))
+
 hello_world = "Hello World!"
 
 # print(hello_world[6])
@@ -42,3 +44,5 @@ print('aluminum' in string)
 # if statement
 if 'grew' in string:
     print('grew in string')
+    
+    print(type(hello_world))
