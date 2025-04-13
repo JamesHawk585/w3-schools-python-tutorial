@@ -15,4 +15,8 @@ print(poplist)
 
 letterlist = ["a", "b", "c", "d"]
 
+# If no index is specified, pop() will return the last index in a list. 
 print(letterlist.pop())
+backward_letter_list = ["z", "y", "x"]
+
+del backward_letter_list[0]
