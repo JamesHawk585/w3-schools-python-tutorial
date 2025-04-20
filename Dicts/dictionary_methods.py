@@ -35,6 +35,27 @@ pc_dict_values = pc_dict.values()
 print(pc_dict_values)
 
 # pop() removes the element with a specified key
+
+pc_dict_pop = pc_dict.copy()
+pc_dict_pop.pop("cpu")
+
+print("pc_dict_pop: ", pc_dict_pop)
+
 # popitem() removes the last inserted key-value pair
+
+pc_dict_popitem = pc_dict.copy()
+pc_dict_popitem.popitem()
+print(pc_dict_popitem)
+
 # setdefault() returns the value of a specified key
+
+pc_dict_setdefault = pc_dict.setdefault("gpu")
+print(pc_dict_setdefault)
+print(pc_dict["gpu"])
+
+
 # update() updates the dict with the specified key-value pairs
+pc_dict_update = pc_dict.copy()
+pc_dict_update.update(motherboard="Tomohawk X870")
+
+print(pc_dict_update)
