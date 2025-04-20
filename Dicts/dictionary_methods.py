@@ -17,12 +17,24 @@ print("pc_dict_fromkeys: ", pc_dict_fromkeys)
 
 
 # get() returns the value of a specified key
+pc_dict_get = pc_dict.get("cpu")
+print("pc_dict_get: ", pc_dict_get)
 
 
 # items() returns a list containing a tuple for each key/value pair
+
+pc_dict_items = pc_dict.items()
+print("pc_dict_items: ", pc_dict_items)
+
 # keys() returns a list containing the dictionaries keys
+pc_dict_keys = pc_dict.keys()
+print(pc_dict_keys)
+
+# values() returns a list of all values in the dict. 
+pc_dict_values = pc_dict.values()
+print(pc_dict_values)
+
 # pop() removes the element with a specified key
 # popitem() removes the last inserted key-value pair
 # setdefault() returns the value of a specified key
 # update() updates the dict with the specified key-value pairs
-# values() returns a list of all values in the dict. 
