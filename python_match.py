@@ -31,4 +31,9 @@ match day_of_week:
         print("A weekday in May")
     case _:
         print("No match.")
+
+my_month = 12
+my_day = 12
+
+
     
