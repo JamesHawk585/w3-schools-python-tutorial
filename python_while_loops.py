@@ -22,6 +22,7 @@ import ipdb
 #  Using 'continue' skips over the designated value and continues the loop.  
 
 # The 'else' statement performs some funtionality once the loop is broken. 
+
 z = 0 
 while z < 6:
     z += 1
