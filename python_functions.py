@@ -9,6 +9,7 @@ def my_function(first_name, last_name):
     print(f'{first_name} {last_name}')
 
 my_function("James", "Hawk")
+my_function("Hawk", "James")
 my_function("John", "Doe")
 my_function("Gerorge", "Washington")
 
@@ -31,6 +32,7 @@ print(terminal_line_break)
 def new_func(child3, child2, child1):
     print("The youngest child is " + child3)
 
+# YOu can pass in as many values as you want. 
 # Passing it too few values results in a TypeError. 
 
 # new_func(child3="Timmy")
@@ -39,3 +41,24 @@ def new_func(child3, child2, child1):
 
 new_func(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
 
+# You can specificy that your function will have ONLY positional or ONLY keyword arguments. 
+
+# To specifity that a function can have only positonal arguments, add / after the args.Adding too mny args will throw a TypeError. 
+
+
+def my_keyword_function(x, /):
+    print(x)
+
+
+my_keyword_function(3)
+
+# Without the , / you are actually allowed to use keyword arguments even if the function expects positional arguments:
+
+# my_keyword_function(x = 5)
+
+# To specify that a function can have only keyword arguments, add *, before the arguments:
+
+def my_positional_function(*, x):
+    print(x)
+
+my_positional_function(x = 3)
